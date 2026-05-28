@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0b0f1a;
+  --foreground: #f1f5f9;
+  --card: rgba(255, 255, 255, 0.06);
+  --card-border: rgba(255, 255, 255, 0.1);
+  --accent: #818cf8;
+  --accent-glow: rgba(129, 140, 248, 0.35);
+}
+
+body {
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  min-height: 100vh;
+  background-color: var(--background);
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(99, 102, 241, 0.25), transparent),
+    radial-gradient(ellipse 60% 40% at 100% 0%, rgba(139, 92, 246, 0.15), transparent),
+    radial-gradient(ellipse 50% 30% at 0% 100%, rgba(59, 130, 246, 0.12), transparent),
+    linear-gradient(180deg, #0b0f1a 0%, #111827 50%, #0f172a 100%);
+  background-attachment: fixed;
+}
+
+/* Subtle grid overlay */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 64px 64px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+}
