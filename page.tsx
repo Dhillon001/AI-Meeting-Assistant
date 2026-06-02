@@ -8,7 +8,7 @@ export default function HomePage() {
           <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.8)]" />
           AI Product Assistant
         </div>
-        <h1 className="bg-gradient-to-r from-white via-slate-100 to-slate-400 bg-clip-text text-4xl font-bold tracking-tight text-transparent sm:text-5xl">
+        <h1 className="text-4xl font-bold tracking-tight text-black sm:text-5xl">
           AI Meeting Assistant
         </h1>
         <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-slate-400 sm:mx-0">

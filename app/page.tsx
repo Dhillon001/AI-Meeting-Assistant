@@ -3,14 +3,15 @@ import { MeetingAnalyzer } from "@/components/MeetingAnalyzer";
 export default function HomePage() {
   return (
     <main className="mx-auto min-h-screen max-w-5xl px-4 py-10 sm:px-6 lg:px-8">
-      <header className="mb-10">
-        <p className="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-indigo-600">
+      <header className="mb-12 text-center sm:text-left">
+        <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-medium uppercase tracking-widest text-indigo-300 backdrop-blur-sm">
+          <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
           AI Product Assistant
-        </p>
-        <h1 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
+        </div>
+        <h1 className="text-4xl font-bold tracking-tight text-black sm:text-5xl">
           AI Meeting Assistant
         </h1>
-        <p className="mt-4 max-w-3xl text-base leading-7 text-slate-600">
+        <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-slate-400 sm:mx-0">
           Paste a meeting transcript to extract summaries, projects, features,
           and action items. Your second brain for meeting decisions and TODOs.
         </p>
